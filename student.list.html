@@ -1,0 +1,54 @@
+<h3>List of Users</h3>
+<button onclick="load_students(document.getElementById('user_table'))">REFRESH</button>
+<select class="textbox" id="search_category">
+    <option value="first_name">First Name</option>
+    <option value="last_name">Last Name</option>
+    <option value="username">Username</option>
+</select>
+<input type="text" class="textbox" placeholder="Enter Search" id="search_textbox" onkeyup="search_students(document.getElementById('user_table'))">
+<table class="table" id="user_table">
+</table>
+<button class="button button-blue" onclick="toggle_visibility('new_user_pane'); document.getElementById('new_user_first_name').focus();">New User</button>
+<div id="new_user_pane" class="hidden">
+    <div>
+        <label>Full Name</label>
+        <input type="text" class="textbox" id="new_user_first_name" placeholder="First Name" autocomplete="off">
+        <input type="text" class="textbox" id="new_user_middle_name" placeholder="Middle Name" autocomplete="off">
+        <input type="text" class="textbox" id="new_user_last_name" placeholder="Last Name" autocomplete="off">
+    </div>
+    <div>
+        <label>User Type</label>
+        <select id="new_user_usertype" class="textbox">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="administrator">Administrator</option>
+        </select>
+        <button id="save_new_user" onclick="save_new_user()">Save</button>
+    </div>
+</div>
+<div class=" floating-dialog independent-floater independent-floater-hidden" id="update_user_pane">
+    <div class="dialog-header">
+        <h3>Edit User</h3>
+    </div>
+    <div class="dialog-content">
+        <div>
+            <label>Full Name: </label>
+            <input type="textbox" class="textbox" name="full_name" id="update_full_name_textbox" disabled>
+        </div>
+        <div>
+            <label>User Type: </label>
+            <select id="update_user_type_select" class="textbox">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="administrator">administrator</option>
+            </select>
+        </div>
+        <div>
+            <button class="button" id="reset_password_user_button">RESET USERNAME & PASSWORD</button>
+        </div>
+    </div>
+    <div class="dialog-footer">
+        <button onclick="close_user_manager()" class="button button-red">CLOSE</button>
+        <button onclick="" class="button button-blue">SAVE</button>
+    </div>
+</div>

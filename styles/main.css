@@ -1,0 +1,234 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0rem;
+}
+
+
+.header {
+    background-color: #00800057;
+    display: flex;
+    padding: 0rem 1rem 0rem 1rem;
+    border-bottom: solid #49a26aa3 2px;
+}
+
+.width-spacer {
+    width: 40vw;
+}
+
+.rowe {
+    display: flex;
+}
+
+.section, .content {
+    max-height: 90vh;
+    min-width: 300px;
+}
+
+.margined-vertical {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.big {
+    font-size: 400px;
+}
+
+.contents {
+    width: 100%;
+}
+
+.section li {
+    list-style: none;
+    padding: 2rem 1rem 2rem 1rem;
+    box-shadow: 1px 2px 2px #482727c4;
+    background-color: #00800057;
+    margin: 1rem 2rem 1rem 1rem;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
+
+.section li:hover {
+    background-color: #0080008a;
+}
+
+.content {
+    transition: all 0.2s ease-in 0.2s;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.content-hidden {
+    display: none;
+    visibility: collapse;
+    opacity: 0;
+}
+
+.content-visible {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.activities {
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.activities-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.activities-hidden {
+    visibility: collapse;
+    opacity: 0;
+}
+
+.activity-board {
+    padding-top: 1rem;
+}
+
+.activity-board li {
+    list-style: none;
+    margin: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.activity-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.class-block {
+    background-color: #89fefe3b;
+    display: inline-flex;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px #002e00;
+    margin: 15px;
+    width: 170px;
+    height: 140px;
+}
+
+.class-flex {
+    margin: 5px;
+}
+
+.selectable-li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fixed-width-checkbox {
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .rowe {
+        display: block;
+    }
+    .row div {
+        max-height: auto;
+    }
+    .fixed-width-checkbox {
+        width: 170px;
+    }
+    
+    #first_name, #middle_name, #last_name {
+        display: block;
+    }
+}
+
+.button-activity-editor {
+    font-size: 10px;
+    background-color: #a8a8a8;
+    padding: 3px;
+}
+
+.button-test-bank {
+    font-size: 10px;
+    background-color: #00b97c;
+    padding: 4px;
+}
+
+.button-test-floating {
+    position: relative;
+    top: 7px;
+    background-color: red;
+}
+
+.textbox-hidable {
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.textbox-hidden {
+    width: 0px;
+    min-width: 0px;
+    visibility: collapse;
+}
+
+.textbox-visible {
+    width: auto;
+    min-width: 130px;
+    visibility: visible;
+}
+
+.topic-box {
+    background-color: #64de7e;
+    width: fit-content;
+    min-width: 300px;
+    padding: 5px;
+    border-radius: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.topic-box-hidden {
+    opacity: 0;
+    visibility: collapse;
+}
+
+.topic-box-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.topic-box h4 {
+    background-color: #d4f7dc;
+    border-radius: 3px;
+}
+
+.question-container {
+    background-color: #64de20;
+    width: inherit;
+    border-radius: 10px;
+}
+
+.question-box {
+    width: inherit;
+    min-width: inherit;
+    background-color: #d4f3ff;
+    border-radius: 10px;
+    margin: 10px 5px 10px 5px;
+}
+
+.question-content {
+    border-radius: 3px;
+}
+
+.hidable-pane {
+  display: flex;
+}
+
+.pane-inside {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.hidable-pane.hidable-pane-visible .pane-inside {
+  max-height: 100%;
+}
+
+.hidable-pane.hidable-pane-visible .button-activity-editor {
+    visibility: collapse;
+}

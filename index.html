@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="MOOC specifically used for KCNHS-SHS TVL-ICT">
+        <meta name="author" content="CHARLES LOUIE M. SIPLAO">
+        
+        <title>ICT CLASSROOM</title>
+        
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/designer.css" rel="stylesheet">
+        <link href="styles/dialog.css" rel="stylesheet">
+        <link href="styles/loading.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h2>WELCOME ___ to your virtual classroom.</h2>
+            <div class="width-spacer"></div>
+            <div>
+                <button class="btn margined-vertical" onclick="open_account()">Profile</button>
+                <button class="btn margined-vertical">Sign Out</button>
+            </div>
+        </div>
+        <div class="rowe">
+            <div class="section">
+                <ul>
+                    <li onclick="open_display();">sadgsahdgajhdag</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li onclick="open_display();">asdsdds</li>
+                    <li>+ Add New</li>
+                </ul>
+            </div>
+            <div class="contents" id="contents">
+                <div class="content content-hidden" id="main_content">
+                    <div class="loading" id="loading">
+                        <p class="loading-object">⬣</p>
+                        <p class="loading-object">⬣</p>
+                        <p class="loading-object">⬣</p>
+                    </div>
+                    <div class="activities activities-hidden" id="activities">
+                        <h3>Activities and Modules for <u>Computer Systems Servicing</u></h3>
+                        <ul class="activity-board">
+                            <li>
+                                <b>Introduction</b>
+                                <ul>
+                                    <li class="activity-link">History of Computers</li>
+                                    <li class="activity-link">What is Computer</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Computer Hardware</b>
+                                <ul>
+                                    <li class="activity-link">Parts of the Computer</li>
+                                    <li class="activity-link">Parts of the System Unit</li>
+                                    <li class="activity-link">Motherboards & CPU's</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-wrapper dialog-hidden" id="account_dialog">
+            <div class="account-dialog" id="account_dialog_inside">
+                <div class="dialog-header">
+                    <h3>Profile</h3>
+                </div>
+                <div class="dialog-content">
+                    <label>Name
+                        <input type="text" class="textbox" placeholder="First Name" id="first_name">
+                        <input type="text" class="textbox" placeholder="Middle Name" id="middle_name">
+                        <input type="text" class="textbox" placeholder="Last Name" id="last_name">
+                    </label>
+                    <hr>
+                    <div>
+                        <label>Gender:
+                            <select>
+                                <option class="unselectable">select</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="dialog-footer">
+                    <button onclick="close_account()">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script src="js/loading.js"></script>
+    <script src="js/main.js"></script>
+</html>

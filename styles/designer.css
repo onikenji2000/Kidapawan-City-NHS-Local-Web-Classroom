@@ -1,0 +1,160 @@
+button, .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background-color: #419545;
+}
+
+button:active, .button:active {
+    box-shadow: 1px 3px 3px #482727c4;
+}
+
+.button-blue {
+    background-color: #4141de;
+}
+
+.button-blue:hover {
+    background-color: #1d1dd5;
+}
+
+.button-red {
+    background-color: #dc5c02;
+}
+
+.button-red:hover {
+    background-color: #bb4d00;
+}
+
+.button-glass {
+    background-color: #2525a9a1;
+}
+
+.button-glass:hover {
+    background-color: #2525a9db;
+}
+
+select {
+    padding: 1ch;
+}
+
+.textbox {
+    font-family: sans-serif;
+    padding: 0.5ch;
+    margin: 1ch 0.2ch 1ch 0.2ch;
+    font-size: 15px;
+}
+
+.textbox:focus, select:focus {
+    border: solid 3px #00330373;
+}
+
+.unselectable {
+    display: none;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #9fea9f;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.table tr {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.table td {
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #d8d5d5;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.checkbox input {
+    height: 0px;
+    width: 0px;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-size: 15px;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    padding: 0.5ch 1ch 0.5ch 1ch;
+    border: 2px solid #c9c9c9;
+    background-color: #dedbdb;
+}
+
+.checkbox:hover input ~ .checkmark {
+    background-color: #c095c0;
+}
+.checkbox input:checked ~ .checkmark {
+    background-color: #1c09ac;
+    border-radius: 15px;
+    color: #e2ebff;
+}
+
+.checkbox .checkmark:after {
+    top: -5px;
+    width: 5px;
+    height: 10px;
+    left: 2px;
+    color: white;
+}
+
+.editable-element {
+    cursor: text;
+    width: fit-content;
+}
+
+.editable-element:focus {
+    outline: none;
+    border-bottom: 1px solid;
+    min-width: 150px;
+}
+
+.blank-editable-element {
+    border-bottom: 1px solid;
+}
+
+.loading-editable-element {
+    opacity: 0.3;
+    
+}

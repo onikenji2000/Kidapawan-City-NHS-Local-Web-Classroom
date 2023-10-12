@@ -1,0 +1,44 @@
+.loading-object {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2rem;
+}
+
+.o1 {
+    left: 50%;
+    top: 4.5rem;
+    animation: move_o1 3s linear infinite;
+}
+
+.o2 {
+    left: 50%;
+    top: 0rem;
+    animation: move_o2 3s linear infinite;
+}
+.o3 {
+    left: 50%;
+    top: -4.5rem;
+    animation: move_o3 3s linear infinite;
+}
+
+@keyframes move_o1 {
+    0% { left: 40%; top: 6.5rem; color: blue; transform: rotate(0deg); }
+    33% { left: 50%; top: 2.5rem; color: green; transform: rotate(-90deg); }
+    66% { left: 60%; top: 6.5rem; color: yellow; transform: rotate(-180deg); }
+    100% { left: 40%; top: 6.5rem; color: blue; transform: rotate(-360deg); }
+}
+
+@keyframes move_o2 {
+    0% { left: 50%; top: -2rem; color: green; transform: rotate(0deg); }
+    33% { left: 60%; top: 2rem; color: yellow; transform: rotate(-90deg); }
+    66% { left: 40%; top: 2rem; color: blue; transform: rotate(-180deg); }
+    100% { left: 50%; top: -2rem; color: green; transform: rotate(-360deg); }
+}
+
+@keyframes move_o3 {
+    0% { left: 60%; top: -2.5rem; color: yellow; transform: rotate(0deg); }
+    33% { left: 40%; top: -2.5rem; color: blue; transform: rotate(-90deg); }
+    66% { left: 50%; top: -6.5rem; color: green; transform: rotate(-180deg); }
+    100% { left: 60%; top: -2.5rem; color: yellow; transform: rotate(-360deg); }
+}

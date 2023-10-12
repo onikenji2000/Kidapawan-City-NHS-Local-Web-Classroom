@@ -1,0 +1,28 @@
+<h3>Class Settings</h3>
+<ul class="activity-board">
+    <li>
+        Class Settings
+        <ul>
+            <li>
+                <label>Class Code</label>
+                <input type="text" id="update_class_code" class="textbox" placeholder="Class Code" disabled>
+            </li>
+            <li>
+                <label>Name of the Class</label>
+                <input type="text" id="update_class_name" class="textbox" placeholder="Name of the Class">
+            </li>
+        </ul>
+    </li>
+    <li>
+        <button class="button" onclick="update_class()">SAVE CHANGES</button>
+    </li>
+    <li>
+        List of Users
+        <select class="textbox" id="search_param">
+            <option value="last_name">Last Name</option>
+            <option value="first_name">First Name</option>
+        </select>
+        <input type="text" class="textbox" id="search_user_textbox" placeholder="Search">
+        <ul id="user_list"></ul>
+    </li>
+</ul>

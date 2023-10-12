@@ -1,0 +1,92 @@
+.dialog-wrapper {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #01012769;
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.account-dialog, .security-dialog, .floating-dialog {
+    background-color: #a4d6a4;
+    border-radius: 10px;
+    border: solid #003303 1px;
+}
+
+.dialog-hidden {
+    display: none;
+    visibility: collapse;
+    opacity: 0;
+}
+
+.dialog-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dialog-header {
+    text-align: center;
+    min-height: 10px;
+    border-bottom: solid #003303;
+}
+
+.dialog-content {
+    background-color: #fafffa;
+    padding: 2ch 1ch 2ch 1ch;
+    transition: all 0.2s ease-in 0.2s;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.dialog-pane-visible {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.dialog-pane-hidden {
+    display: none;
+    visibility: collapse;
+    opacity: 0;
+}
+
+.dialog-footer {
+    border-top: solid #003303;
+    min-height: 10px;
+    padding: 1ch;
+}
+
+.independent-floater {
+    position: absolute;
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.independent-floater-hidden {
+    top: -500px;
+    left: -670px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.independent-floater-visible {
+    top: 300px;
+    left: 55vw;
+    opacity: 1;
+    visibility: visible;
+}
+
+.black-translucent-background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #01012769;
+    transition: all 0.2s ease-in 0.2s;
+}

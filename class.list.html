@@ -1,0 +1,34 @@
+<h3>List of Classes</h3>
+<button class="button" onclick="open_new_class()">&#10133<br>Add New Class</button>
+<div id="class_list">
+    <div class="class-block">
+        <div class="class-flex">
+            <div>
+                <h4>Temporary Placeholder</h4>
+            </div>
+            <button class="button button-glass">&#9881</button>
+            <button class="button button-glass">&#128366</button>
+        </div>
+    </div>
+</div>
+<div class="black-translucent-background dialog-hidden" id="new_class_background">
+    <div class="independent-floater independent-floater-hidden floating-dialog" id="new_class_dialog">
+        <div class="dialog-header">
+            <h3>New Class</h3>
+        </div>
+        <div class="dialog-content">
+            <div>
+                <label>Class Code</label>
+                <input class="textbox" type="text" id="new_class_code_textbox" name="class_code" placeholder="Class Code" autocomplete="off">
+            </div>
+            <div>
+                <label>Name of Class</label>
+                <input class="textbox" type="text" id="new_class_name_textbox" name="class_name" placeholder="Name of Class" autocomplete="off">
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <button onclick="close_new_class()">CLOSE</button>
+            <button onclick="save_new_class()">SAVE</button>
+        </div>
+    </div>
+</div>
